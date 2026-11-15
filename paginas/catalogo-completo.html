@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catálogo Completo | UmmaPets</title>
+
+        <!-- SEO On-Page -->
+        <meta name="description" content="Todo el catalogo de nuestra pagina en una sola para que puedas navegar y encontrar lo que desees.">
+        <meta name="keywords" content="alimentos para mascotas, accesorios mascotas, Royal Canin, Purina, pet shop Córdoba">
+        <meta name="author" content="UmmaPets">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="Catálogo completo | Umma Pets">
+        <meta property="og:description" content="Encontrá todo lo que necesitas recopilado en una sola página, te facilita a la busqueda.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="https://raw.githubusercontent.com/alvarovaldes196-jpg/umma-pets/refs/heads/main/imagenes/logos/logo-umma-pets.jpg">
+        <meta property="og:locale" content="es_AR">
+
+        <!-- Performance -->
+        <meta name="theme-color" content="#ffd6d6">
+
+        <!-- Estilo CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- Tipografia -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+
+        <!-- Script JS -->
+        <script src="../js/main.js" defer></script>
+
+    </head>
+    <body>
+
+        <!-- Header catálogo completo -->
+        <header class="header">
+            <a href="../index.html" class="header__titulo">Umma Pets</a>
+            <nav class="header__navegacion">
+                <ul class="header__lista">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="alimentos.html">Alimentos</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="catalogo-completo.html">Catálogo Completo</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Main catálogo completo -->
+        <main class="main-catalogo-completo">
+            <!-- Presentacion de catálogo completo -->
+            <section class="presentacion">
+                <h1>Catálogo completo</h1>
+                <p>Explorá nuestro catálogo completo y encontrá alimentos y accesorios seleccionados para el bienestar y la diversión de tus mascotas.</p>
+            </section>
+
+            <!-- Buscador y filtros -->
+            <section class="herramientas">
+                <input type="text" id="buscador" placeholder="Buscar producto (Esc para borrar)" aria-label="Buscar producto">
+                <div class="filtros">
+                    <button class="filtro filtro--activo" data-categoria="todos">Todos</button>
+                    <button class="filtro" data-categoria="alimentos">Alimentos</button>
+                    <button class="filtro" data-categoria="accesorios">Accesorios</button>
+                </div>
+            </section>
+
+            <!-- Mensaje de feedback -->
+            <section>
+                <div id="mensaje" class="mensaje" role="status"></div>
+            </section>
+
+            <!-- Tienda: productos y carrito -->
+            <div class="tienda">
+                <section class="productos">
+                    <h2>Productos</h2>
+                    <div id="lista-productos" class="productos__contenedor"></div>
+                </section>
+                <aside class="carrito">
+                    <h2>Tu carrito</h2>
+                    <ul id="lista-carrito"></ul>
+                    <div id="resumen-carrito"></div>
+                    <button id="boton-comprar" class="boton">Finalizar compra</button>
+                    <button id="boton-vaciar" class="boton boton--secundario">Vaciar carrito</button>
+                </aside>
+            </div>
+        </main>
+
+        <!-- Footer catálogo completo -->
+        <footer class="footer">
+            <section>
+                <h4>Umma Pets</h4>
+                <p>Tu amor se nota en lo que le das</p>
+                <p>Elegí calidad</p>
+            </section>
+            <section>
+                <h4>Navegación</h4>
+                <ul class="footer__lista">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="alimentos.html">Alimentos</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="catalogo-completo.html">Catálogo Completo</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Información</h4>
+                <ul class="footer__lista">
+                    <li><a href="nosotros.html#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                    <li><a href="nosotros.html#envios-y-entregas">Envíos y entregas</a></li>
+                    <li><a href="nosotros.html#medios-de-pago">Medios de pago</a></li>
+                </ul>
+            </section>
+            <section class="footer__seccion">
+                <h4>Contacto</h4>
+                <ul class="footer__lista footer__lista--contacto">
+                    <li><img src="../img/iconos/icono-whatsapp.png" alt="Icono de WhatsApp" loading="lazy"><a href="https://wa.me/5493517452823" target="_blank">+54 9 351 745 2823</a></li>
+                    <li>
+                    <img src="../img/iconos/icono-instagram.png" alt="Icono de Instagram" loading="lazy"><a href="https://www.instagram.com/umma.pets/" target="_blank">Instagram</a></li>
+                    <li><img src="../img/iconos/icono-telefono.png" alt="Icono de Teléfono" loading="lazy"><a href="tel:+5493517452823">+54 9 351 745 2823</a></li>
+                    <li class="footer__horario"><img src="../img/iconos/icono-reloj.png" alt="Icono de Reloj" loading="lazy">
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                        <p>Sábados: 10:00 AM - 2:00 PM</p></li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>
